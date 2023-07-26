@@ -114,7 +114,7 @@ By following these steps, you can efficiently work with Spark and Parquet data i
 #Analysis
 
 The average price for a four bedroom house sold in each year rounded to two decimal places.
-
+```
 +----+---------+
 |year|avg_price|
 +----+---------+
@@ -123,9 +123,9 @@ The average price for a four bedroom house sold in each year rounded to two deci
 |2021|301819.44|
 |2022|296363.88|
 +----+---------+
-
+```
 The average price of a home for each year the home was built that have 3 bedrooms and 3 bathrooms rounded to two decimal places
-
+```
 +----+---------+
 |year|avg_price|
 +----+---------+
@@ -138,10 +138,10 @@ The average price of a home for each year the home was built that have 3 bedroom
 |2016|290555.07|
 |2017|292676.79|
 +----+---------+
-
+```
  The average price of a home for each year built that have 3 bedrooms, 3 bathrooms, with two floors,
 and are greater than or equal to 2,000 square feet rounded to two decimal places?
-
+```
 +----+---------+
 |year|avg_price|
 +----+---------+
@@ -154,35 +154,35 @@ and are greater than or equal to 2,000 square feet rounded to two decimal places
 |2016| 293965.1|
 |2017|280317.58|
 +----+---------+
-
+```
 The "view" rating for the average price of a home, rounded to two decimal places, where the homes are greater than
 or equal to $350,000? Although this is a small dataset, determine the run time for this query.
-
+```
 +---------+--------+
 |avg_price|avg_view|
 +---------+--------+
 |473796.26|   32.26|
 +---------+--------+
-
+```
 
 Using the cached data, run the query that filters out the view ratings with average price 
 greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime
-
+```
 Uncached Result:
 +--------+
 |avg_view|
 +--------+
 |   32.26|
 +--------+
-
+```
 Uncached Query Runtime: 0.025943756103515625 seconds
-
+```
 Cached Result:
 +--------+
 |avg_view|
 +--------+
 |   32.26|
 +--------+
-
+```
 Cached Query Runtime: 0.21535825729370117 seconds
 
